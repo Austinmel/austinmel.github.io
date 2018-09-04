@@ -1,0 +1,85 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Helvetica, sans-serif, Arial;
+    text-align: center;
+}
+.head-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Website1/Images/Header.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.head-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+nav{
+    float:none;
+}
+body li{
+    display: inline;
+}
+.NavBar{
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: grey;
+}
+.NavBar:hover{
+    color:white;
+    font-weight: bold;
+}
+.NavActive{
+    color:blue;
+    font-weight: bold;
+}
+.home-body{
+    text-align: center;
+    position: relative;
+}
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+}
+.gallery2 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: right;
+    width: 300px;
+}
+
+.gallery2:hover {
+    border: 1px solid #777;
+}
+
+.gallery2 img {
+    width: 300px;
+    height: 200px;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
+}
