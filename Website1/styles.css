@@ -1,3 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
 body, html {
     height: 100%;
     margin: 0;
@@ -55,7 +67,6 @@ body li{
     float: left;
     width: 300px;
 }
-
 .gallery:hover {
     border: 1px solid #777;
 }
@@ -70,7 +81,6 @@ body li{
     float: right;
     width: 300px;
 }
-
 .gallery2:hover {
     border: 1px solid #777;
 }
@@ -82,4 +92,71 @@ body li{
 .desc {
     padding: 15px;
     text-align: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+.title {
+    color: grey;
+    font-size: 18px;
+}
+.contact {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.contact:hover, a:hover {
+    opacity: 0.7;
+}
+.portfoliomain {
+    max-width: 1000px;
+    margin: auto;
+}
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+.portfoliorow {
+    margin: 8px -16px;
+}
+.portfoliorow,
+.portfoliorow > .portfoliocolumn {
+    padding: 8px;
+}
+.portfoliocolumn {
+    float: left;
+    width: 25%;
+}
+.portfoliorow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.portfoliocontent {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 900px) {
+    .portfoliocolumn {
+        width: 50%;
+    }
+}
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+    .portfoliocolumn {
+        width: 100%;
+    }
 }
