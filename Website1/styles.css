@@ -1,3 +1,4 @@
+/* General */
 * {
     box-sizing: border-box;
 }
@@ -16,6 +17,7 @@ body, html {
     font-family: Helvetica, sans-serif, Arial;
     text-align: center;
 }
+/* Header */
 .head-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Website1/Images/Header.jpg");
   height: 50%;
@@ -32,6 +34,7 @@ body, html {
   transform: translate(-50%, -50%);
   color: white;
 }
+/* Nav Bar */
 nav{
     float:none;
 }
@@ -57,14 +60,16 @@ body li{
     color:blue;
     font-weight: bold;
 }
+/* Home Body */
 .home-body{
     text-align: center;
     position: relative;
 }
+/* Gallery */
 .gallery {
-    margin: 5px;
+    margin: 0 auto;
+    display: inline-table;
     border: 1px solid #ccc;
-    float: left;
     width: 300px;
 }
 .gallery:hover {
@@ -76,9 +81,9 @@ body li{
     height: 200px;
 }
 .gallery2 {
-    margin: 5px;
+    margin: 0 auto;
+    display: inline-table;
     border: 1px solid #ccc;
-    float: right;
     width: 300px;
 }
 .gallery2:hover {
@@ -93,6 +98,7 @@ body li{
     padding: 15px;
     text-align: center;
 }
+/* Contact Me Card */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
@@ -118,6 +124,7 @@ body li{
 .contact:hover, a:hover {
     opacity: 0.7;
 }
+/* Portfolio */
 .portfoliomain {
     max-width: 1000px;
     margin: auto;
@@ -146,14 +153,24 @@ h1 {
     background-color: white;
     padding: 10px;
 }
-
+footer{
+    margin-top: 50px;
+    padding-bottom: 25px;
+    display: block;
+    font-size:12px;
+    border-top:black 3px solid;
+    background-color: #CDCDCD;
+    font-family: helvetica, arial, sans-serif, monospace;
+}
+footer li{
+    padding:0 20px 0 20px;
+}
 /* Responsive layout */
 @media screen and (max-width: 900px) {
     .portfoliocolumn {
         width: 50%;
     }
 }
-
 /* Responsive layout */
 @media screen and (max-width: 600px) {
     .portfoliocolumn {
